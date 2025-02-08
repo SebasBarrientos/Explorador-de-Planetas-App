@@ -13,9 +13,6 @@ export default async function PlanetsPage() {
                     <li key={planet.id}>{planet.name}</li>
                 ))}
             </ul>
-
         </main>
     )
-
-
 }
