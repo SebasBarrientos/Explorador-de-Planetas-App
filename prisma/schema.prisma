@@ -11,7 +11,7 @@ datasource db {
   url  	    = env("DATABASE_URL")
 }
 
-model Planet {
+model Planets {
   id           Int      @id @default(autoincrement())
   name         String   @unique
   temperature  Float

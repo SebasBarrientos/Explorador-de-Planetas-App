@@ -2,7 +2,7 @@ import { prisma } from "@/lib/db"
 
 
 export default async function PlanetsPage() {
-    const planets = await prisma.planet.findMany()
+    const planets = await prisma.Planets.findMany()
     
 
     return (
