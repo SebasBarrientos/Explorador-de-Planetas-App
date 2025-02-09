@@ -1,9 +1,9 @@
 import { prisma } from "@/lib/db"
-import PlanetModal from "./PlanetsList";
+import PlanetsList from "./PlanetsList";
 
 export const dynamic = "force-dynamic"; 
 export default async function PlanetsPage() {
     const planets = await prisma.planets.findMany()
-    return < PlanetModal planets ={planets} />
+    return < PlanetsList planets ={planets} />
     
 }
