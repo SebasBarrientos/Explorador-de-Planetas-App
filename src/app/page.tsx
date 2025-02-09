@@ -8,7 +8,7 @@ export default function Home() {
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
         <h1>Welcome explorer</h1>
-        <Link href="planets">Acces the list of planets</Link>        
+        <Link href="planets" className="bg-slate-950 text-slate-400 border border-slate-400 rounded-md ">Access the list of planets</Link>        
         </div>
       </main>
       
