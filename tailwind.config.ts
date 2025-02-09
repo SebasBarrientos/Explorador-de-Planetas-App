@@ -13,9 +13,10 @@ export default {
     extend: {
       backgroundImage: {
         // Fondo psicodélico inspirado en el espacio
-        'space-psychedelic': 'radial-gradient(ellipse at bottom, #0D1B2A 0%, #1B263B 60%, #415A77 100%)',
+        'cosmic-dark': 'radial-gradient(circle at center,rgb(15, 15, 15) 0%, #1c1c1c 60%, #000000 100%)'
       },
       colors: {
+        "aliceblue": '#F0F8FF',
         // Colores cósmicos para acentos y detalles
         'cosmic-purple': '#BEF264',
         'cosmic-blue': '#0D1B2A',

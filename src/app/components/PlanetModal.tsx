@@ -4,9 +4,9 @@ import {
     ModalContent,
     ModalHeader,
     ModalBody,
-    ModalFooter
+
 } from "@heroui/modal";
-import { Button } from "@heroui/button";
+import { Divider } from "@heroui/react";
 import { Planets } from "@prisma/client";
 
 interface PlanetModalProps {
@@ -17,12 +17,36 @@ interface PlanetModalProps {
 
 export default function PlanetModal({ isOpen, onOpenChange, selectedPlanet }: PlanetModalProps) {
     return (
-        <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop={"blur"} size={"xs"}>
+        <Modal className="border border-gray-600" isOpen={isOpen} onOpenChange={onOpenChange} backdrop={"blur"} size={"xs"} placement={"center"}
+            motionProps={{
+                variants: {
+                    enter: {
+                        x: 0,
+                        opacity: 1,
+                        transition: {
+                            duration: 0.3,
+                            ease: "easeOut",
+                        },
+                    },
+                    exit: {
+                        x: -20,
+                        opacity: 0,
+                        transition: {
+                            duration: 0.2,
+                            ease: "easeIn",
+                        },
+                    },
+                },
+            }}
+        >
             <ModalContent>
-                {(onClose) => (
+                {() => (
                     <>
-                        <ModalHeader className="flex flex-col gap-1 border-b mx-4">{selectedPlanet?.name}</ModalHeader>
-                        <ModalBody>
+                        <ModalHeader className="flex flex-col justify-start gap-1 -mb-1 mx-4 text-left px-2">{selectedPlanet?.name}</ModalHeader>
+                        <div className="mx-4">
+                            <Divider />
+                        </div>
+                        <ModalBody className="pb-4">
                             <ul>
                                 <li>Temperature: {selectedPlanet?.temperature}</li>
                                 <li>Composition: {selectedPlanet?.composition}</li>
@@ -30,11 +54,7 @@ export default function PlanetModal({ isOpen, onOpenChange, selectedPlanet }: Pl
                                 <li>Habitability: {selectedPlanet?.habitability}</li>
                             </ul>
                         </ModalBody>
-                        <ModalFooter>
-                            <Button color="danger" variant="light" onPress={onClose}>
-                                Close
-                            </Button>
-                        </ModalFooter>
+
                     </>
                 )}
             </ModalContent>
