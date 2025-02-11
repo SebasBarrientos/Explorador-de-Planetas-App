@@ -45,7 +45,7 @@ export default function AppNavbar() {
                 <NavbarContent as="div" className="gap-4" justify="center">
                     <NavbarItem>
                         <Link color="foreground" href="planets">
-                            Acces database
+                            Access database
                         </Link>
                     </NavbarItem>
                     <NavbarItem isActive>
