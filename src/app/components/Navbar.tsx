@@ -63,7 +63,7 @@ export default function AppNavbar() {
                         mainWrapper: "h-full",
                         input: "text-small",
                         inputWrapper:
-                            "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
+                            "h-full rounded-large font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
                     }}
                     placeholder="Type to search..."
                     size="sm"
