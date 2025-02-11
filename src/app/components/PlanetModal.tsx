@@ -48,10 +48,10 @@ export default function PlanetModal({ isOpen, onOpenChange, selectedPlanet }: Pl
                         </div>
                         <ModalBody className="pb-4">
                             <ul>
-                                <li>Temperature: {selectedPlanet?.temperature}</li>
-                                <li>Composition: {selectedPlanet?.composition}</li>
-                                <li>Gravity: {selectedPlanet?.gravity}</li>
-                                <li>Habitability: {selectedPlanet?.habitability}</li>
+                                <li><strong>Temperature</strong>: {selectedPlanet?.temperature}</li>
+                                <li><strong>Composition</strong>: {selectedPlanet?.composition}</li>
+                                <li><strong>Gravity</strong>: {selectedPlanet?.gravity}</li>
+                                <li><strong>Habitability</strong>: {selectedPlanet?.habitability}</li>
                             </ul>
                         </ModalBody>
 

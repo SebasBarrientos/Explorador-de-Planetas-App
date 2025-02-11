@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col items-center  p-10">
-      <main className="flex flex-col gap-4 row-start-2 items-center ">
+      <main className="flex flex-col gap-4 items-center ">
         <h1 className="max-w-[50rem] sm:max-w-[49rem] px-3 md:px-0 sm:text-5xl md:text-7xl text-4xl font-semibold font-display md:leading-[1.1em] text-center z-10 bg-gradient-to-b from-gray-200 to-gray-500 text-transparent bg-clip-text mt-5">
           Cosmic Voyager<span className="text-white sm:text-5xl md:text-7xl text-4xl">🪐</span>
         </h1>
@@ -24,10 +24,15 @@ export default function Home() {
             Embark on this cosmic odyssey, where every line of code not only maps a distant planet but also charts the course to humanity&apos;s next home.
           </p>
         </div>
+        <div className="flex gap-4">
 
-        <Link href="planets" className="mt-2 inline-block bg-content1 border border-gray-600 hover:bg-gray-800 text-aliceblue font-bold py-3 px-6 rounded-large transition">
-          Begin your voyage
-        </Link>
+          <Link href="updatedb" className="mt-2 inline-block bg-content1 border border-gray-600 hover:bg-gray-800 text-aliceblue font-bold py-3 px-6 rounded-large transition">
+            Update database
+          </Link>
+          <Link href="planets" className="mt-2 inline-block bg-gray-600 border border-gray-600 hover:bg-gray-800 text-aliceblue font-bold py-3 px-6 rounded-large transition">
+            Access database
+          </Link>
+        </div>
       </main>
     </div>
   );
