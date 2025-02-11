@@ -26,10 +26,10 @@ export default function Home() {
         </div>
         <div className="flex gap-4">
 
-          <Link href="updatedb" className="mt-2 inline-block bg-content1 border border-gray-600 hover:bg-gray-800 text-aliceblue font-bold py-3 px-6 rounded-large transition">
+          <Link href="updatedb" className="text-center mt-2 inline-block bg-content1 border border-gray-600 hover:bg-gray-800 text-aliceblue font-bold py-3 px-6 rounded-large transition">
             Update database
           </Link>
-          <Link href="planets" className="mt-2 inline-block bg-gray-600 border border-gray-600 hover:bg-gray-800 text-aliceblue font-bold py-3 px-6 rounded-large transition">
+          <Link href="planets" className="text-center mt-2 inline-block bg-gray-600 border border-gray-600 hover:bg-gray-800 text-aliceblue font-bold py-3 px-6 rounded-large transition">
             Access database
           </Link>
         </div>
