@@ -41,9 +41,8 @@ export const SearchIcon = ({ size = 24, strokeWidth = 1.5 }) => {
 export default function AppNavbar() {
     return (
         <Navbar isBordered>
-            <NavbarContent justify="center">
-                
-                <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            <NavbarContent justify="start">
+                <NavbarContent as="div" className="gap-4" justify="center">
                     <NavbarItem>
                         <Link color="foreground" href="planets">
                             Acces database
@@ -57,7 +56,7 @@ export default function AppNavbar() {
                 </NavbarContent>
             </NavbarContent>
 
-            <NavbarContent as="div" className="items-center" justify="end">
+            <NavbarContent as="div" className="hidden sm:flex items-center" justify="end">
                 <Input
                     classNames={{
                         base: "max-w-full sm:max-w-[10rem] h-10",
