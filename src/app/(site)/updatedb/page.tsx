@@ -61,7 +61,7 @@ const Page = () => {
                         <div className='flex flex-col gap-4 items-center'>
 
                             {/* <div className='flex  gap-4 items-center'> */}
-                                <input className="flex w-full rounded-md border border-gray-300 border-input bg-content1 pr-1 text-gray-400 file:border-0 file:bg-gray-600 file:blue  file:font-medium"
+                                <input className="flex w-full rounded-md border border-gray-300 border-input bg-content1 pr-1 text-gray-400 file:border-0 file:bg-gray-600 file:blue file:font-medium"
                                     type="file"
                                     id="picture"
                                     accept='.csv'

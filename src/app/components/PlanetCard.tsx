@@ -6,7 +6,7 @@ export default function PlanetCard({ name, habitability,id }: { name: string, ha
             <CardHeader >
                 <div className="flex flex-col w-full">
                     <p className="text-md text-default-500">Planet</p>
-                    <div className="flex flex justify-between items-baseline w-full">
+                    <div className="flex justify-between items-baseline w-full">
                         <p className="text-xl text-aliceblue">{name}</p>
                         <p className="text-xs text-default-500 ">Id: {id}</p>
                     </div>
