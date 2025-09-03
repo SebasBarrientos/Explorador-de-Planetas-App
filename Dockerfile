@@ -10,15 +10,15 @@ WORKDIR /app
 
 # Copiar package.json y package-lock.json primero para cache
 COPY package*.json ./
-
+COPY prisma ./prisma
 # Instalar dependencias con legacy-peer-deps (evita conflictos)
 RUN npm install --legacy-peer-deps
 
 # Copiar el resto de archivos
 COPY . .
+
 # Generar cliente Prisma (necesita las variables de entorno)
 RUN npx prisma generate
-
 # Construir la app (ahora con la variable disponible)
 RUN npm run build
 
