@@ -1,4 +1,4 @@
-import { Navbar, NavbarContent, NavbarItem, Link, Input } from "@heroui/react";
+import { Navbar, NavbarContent, NavbarItem, Link } from "@heroui/react";
 
 export const SearchIcon = ({ size = 24, strokeWidth = 1.5 }) => {
     return (
