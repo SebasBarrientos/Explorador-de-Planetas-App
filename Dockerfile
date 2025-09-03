@@ -13,7 +13,10 @@ COPY package*.json ./
 COPY prisma ./prisma
 # Instalar dependencias con legacy-peer-deps (evita conflictos)
 RUN npm install --legacy-peer-deps
-
+# Instalar Cloud SQL Proxy
+RUN apk add --no-cache curl && \
+    curl -o /usr/local/bin/cloud_sql_proxy https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 && \
+    chmod +x /usr/local/bin/cloud_sql_proxy
 # Copiar el resto de archivos
 COPY . .
 
