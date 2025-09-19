@@ -34,7 +34,7 @@ const ErrorModal: React.FC<ErrorModalProps> = ({ errors, onClose,isOpen, onOpenC
                             <ul className="max-h-60 overflow-y-auto">
                                 {errors.map(({ planet, reason }, index) => (
                                     <li key={index} className="mb-2">
-                                        <strong>{planet.name}</strong>: {reason?.toString().includes("Unique constraint failed on the fields: (`name`)") ? "The planets names must be unique" : reason?.toString() || "Error desconocido"}
+                                        <strong>{planet.name}</strong>: {reason?.toString().includes("Planets_name_key") ? "The planets names must be unique" : reason?.toString() || "Error desconocido"}
 
                                     </li>
                                 ))}
